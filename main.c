@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-prime (int m,int n)
+prime (int mm,int n)
 {
     int i;
-    for(i=m;i<=n;i++)
+    for(i=mm;i<=n;i++)
     {
            int x,flag=0;
            for(x=2;x<=i/2;x++)
            {
-                if(m%x==0)
+                if(mm%x==0)
                 {
                     flag = 1;
                     break;
@@ -17,7 +17,7 @@ prime (int m,int n)
 
         if (flag == 0)
             {
-                printf("%d",m);
+                printf("%d",mm);
             }
     }
 }
